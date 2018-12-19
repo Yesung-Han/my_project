@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <h1>My Apps!</h1>
+    <router-link v-bind:to="{ name: 'HelloWorld' }">Home</router-link>
+    <router-link v-bind:to="{ name: 'TodoList'}">Todo</router-link>
     <router-view/>
   </div>
 </template>
@@ -19,5 +21,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+h1 {
+  text-align: center;
 }
 </style>
